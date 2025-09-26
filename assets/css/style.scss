@@ -1,0 +1,36 @@
+---
+---
+// Import the theme, then override styles
+@import "minima";
+
+/* Prefer wrapping code to avoid horizontal scrollbars */
+pre, code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Hide horizontal scrollbar if any remains (Firefox + WebKit) */
+pre {
+  overflow-x: hidden;
+  scrollbar-width: none;        /* Firefox */
+}
+pre::-webkit-scrollbar {         /* WebKit */
+  display: none;
+}
+
+/* Optional: nicer blockquote and table spacing */
+blockquote {
+  border-left: 0.25rem solid var(--color-border-muted, #d0d7de);
+  padding-left: 1rem;
+  color: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #d0d7de;
+  padding: 0.5rem 0.75rem;
+}
