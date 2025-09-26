@@ -2,19 +2,21 @@ title: GFM Demo
 description: GitHub Flavored Markdown on GitHub Pages (Jekyll)
 theme: minima
 
-# Ensure GFM parsing
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+    span:
+      line_numbers: false
 
-# Permalinks etc.
 permalink: pretty
-
-# (Optional) Set baseurl if deploying to a project page (e.g., /my-repo). Leave empty for user/organization site.
 baseurl: ""
 url: ""
 
-# Minima options
 minima:
   skin: auto
   social_links:
